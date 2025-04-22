@@ -1,31 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Free YouTube Subscriber Generator</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YTSubs Free - Get Free Subscribers</title>
+
+  <!-- Google AdSense Script -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7376392977427560"
+    crossorigin="anonymous"></script>
+
+  <!-- Styles -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      text-align: center;
+      padding: 2rem;
+    }
+    h1 {
+      color: #ff0000;
+    }
+    input {
+      padding: 0.5rem;
+      width: 60%;
+      max-width: 400px;
+      margin: 1rem auto;
+      display: block;
+    }
+    button {
+      padding: 0.6rem 1.2rem;
+      background: #ff0000;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+      margin-top: 1rem;
+    }
+    .ads {
+      margin: 2rem auto;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <h1>🎉 Free YouTube Subscribers Generator</h1>
-    <p>Enter your channel link to start gaining 10,000+ subscribers instantly!</p>
 
-    <input type="text" id="channelInput" placeholder="Paste your YouTube channel link here">
-    <button onclick="startGeneration()">Generate Subscribers</button>
+  <h1>YTSubs Free</h1>
+  <p>Get free YouTube subscribers instantly! Just enter your channel link below.</p>
 
-    <div class="progress-container" id="progressSection">
-      <div class="progress-bar" id="progressBar"></div>
-      <p id="progressText">Starting...</p>
-    </div>
+  <input type="text" placeholder="Enter your YouTube channel link" id="channelInput" />
 
-    <div class="ads">
-      <!-- Ad placeholder (replace with real AdSense later) -->
-      <p><strong>Advertisement</strong></p>
-      <div class="fake-ad">🔥 Boost Your Channel Now! 🔥</div>
-    </div>
+  <button onclick="generate()">Generate Subscribers</button>
+
+  <!-- Ad block 1 -->
+  <div class="ads">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-7376392977427560"
+         data-ad-slot="1234567890"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
   </div>
 
-  <script src="script.js"></script>
+  <!-- Ad block 2 -->
+  <div class="ads">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-7376392977427560"
+         data-ad-slot="1234567890"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <!-- Script -->
+  <script>
+    function generate() {
+      const channel = document.getElementById('channelInput').value;
+      if (!channel || !channel.includes("youtube.com")) {
+        alert("Please enter a valid YouTube channel link.");
+        return;
+      }
+
+      alert("Generating 1000 subscribers...\nPlease wait a few seconds...");
+      setTimeout(() => {
+        window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+      }, 3000);
+    }
+  </script>
+
 </body>
 </html>
