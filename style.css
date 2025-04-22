@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #f1f5f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  max-width: 600px;
+  text-align: center;
+  padding: 30px;
+  background-color: #1e293b;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+input {
+  width: 80%;
+  padding: 12px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+button {
+  margin-top: 15px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #10b981;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #059669;
+}
+
+.progress-container {
+  margin-top: 30px;
+  width: 100%;
+  background-color: #334155;
+  height: 25px;
+  border-radius: 12px;
+  display: none;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: #3b82f6;
+  border-radius: 12px;
+  transition: width 0.2s ease-in-out;
+}
+
+#progressText {
+  margin-top: 10px;
+}
+
+.ads {
+  margin-top: 40px;
+}
+
+.fake-ad {
+  background: #f59e0b;
+  color: black;
+  padding: 10px;
+  border-radius: 8px;
+}
